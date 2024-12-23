@@ -48,17 +48,6 @@ export const MapComponent: React.FC = () => {
         <p>Este é um painel que você pode arrastar pela área do mapa usando a barra superior.</p>
       </MapOverlay>
 
-      {/* Exemplo de overlay fixo */}
-      <MapOverlay
-        isOpen={isInfoOpen}
-        onClose={() => setIsInfoOpen(false)}
-        title="Informações"
-        isDraggable={false}
-        initialPosition={{ x: 20, y: 20 }}
-        className="w-64"
-      >
-        <p>Este é um painel fixo que sempre aparece na mesma posição.</p>
-      </MapOverlay>
     </div>
   );
 };
