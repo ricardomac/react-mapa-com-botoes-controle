@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ajuste dos z-indices para garantir a ordem correta de empilhamento */
+.leaflet-container {
+  z-index: 0;
+}
+
+.leaflet-control {
+  z-index: 1;
+}
+
+.map-overlay {
+  z-index: 1000;
+}
+
+/* Fix para os ícones do Leaflet */
+.leaflet-default-icon-path {
+  background-image: url("https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png");
+}
+
+.leaflet-default-shadow-path {
+  background-image: url("https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png");
+}
